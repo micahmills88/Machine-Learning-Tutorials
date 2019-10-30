@@ -12,8 +12,8 @@ namespace PlotTest
             graph.SetBounds(-10f, 10f, -10f, 10f);
 
             float deviation = 1f;
-            PlotPoint[] g1 = GlobalRandom.BuildRandom(-2, deviation, 1, deviation, 0, 150);
-            PlotPoint[] g2 = GlobalRandom.BuildRandom(2, deviation, -1, deviation, 0, 150);
+            PlotPoint[] g1 = GlobalRandom.BuildRandom(-2, deviation, 1, deviation, 0, 500);
+            PlotPoint[] g2 = GlobalRandom.BuildRandom(2, deviation, -1, deviation, 0, 500);
 
 
             Neuron neuron = new Neuron();

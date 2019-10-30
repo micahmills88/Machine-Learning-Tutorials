@@ -25,7 +25,6 @@ namespace Plotting
         float yBegin = -1;
         float yEnd = 1;
 
-        bool autoScale = false;
         float xScale = 1;
         float yScale = 1;
         float xOffset = 1;
@@ -74,11 +73,6 @@ namespace Plotting
             xOffset = xBegin * xScale;
             yOffset = yBegin * yScale;
             DrawPlotBackground();
-        }
-
-        public void SetAutoScale(bool autoscale)
-        {
-            this.autoScale = autoscale;
         }
 
         public void DrawPlotBackground()

@@ -29,15 +29,13 @@ namespace PlotTest
             return Activate(a * x + b * y + c);
         }
 
-        public float Train(float x, float y, float expected)
+        public void Train(float x, float y, float expected)
         {
             float output = Activate(a * x + b * y + c);
             float error = expected - output;
             a += learning_rate * x * error;
             b += learning_rate * y * error;
             c += learning_rate * error;
-
-            return Math.Abs(error);
         }
 
         private float Activate(float input)
